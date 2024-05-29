@@ -1,0 +1,50 @@
+
+.hero {
+    padding-top: 140px;
+    padding-bottom: 90px;
+    .hero_inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .hero__left {
+        width: 470px;
+      }
+      .hero__title {
+        color: black;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+      }
+      .hero__info {
+        color: black;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: 16px;
+      }
+      button{
+        padding: 8px 16px;
+        background-color: #00bafc;
+        color: white;
+        border: none;
+        margin-top: 16px;
+        border-radius: 5px;
+        display: block;
+        text-decoration: none;
+        width: 232px;
+        cursor: pointer;
+        transition: all 0.2s linear;
+      }
+      button:hover {
+        border: 2.5px solid #00bafc;
+  transform: scale(1.1);
+        font-size: 18px;
+        background: #fff;
+        color: #00bafc;
+      }
+      .hero__right {
+        border-radius: 5px;
+      }
+  }

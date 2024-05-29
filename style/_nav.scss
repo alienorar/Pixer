@@ -1,0 +1,50 @@
+header {
+    padding: 16px 0;
+    box-shadow: 10px 10px 5px rgb(145, 170, 182);
+
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+
+        .nav__list {
+            list-style-type: none;
+            display: flex;
+
+            .nav__item {
+                margin-left: 32px;
+              
+                a {
+                  text-decoration: none;
+                  color: black;
+                  font-size: 15px;
+                  transition: all 0.3s linear;
+                }
+                a:hover {
+                  border-bottom: 2px solid#00bafc;
+                  font-size: 26px;
+                  color: #00bafc;
+              }
+              }
+          }
+
+          button {
+            padding: 8px 16px;
+            background-color: #00bafc;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.2s linear;
+          }
+          button:hover {
+            border: 2.5px solid #00bafc;
+      transform: scale(1.1);
+            font-size: 18px;
+            background: #fff;
+            color: #00bafc;
+          }
+          
+      }
+  }
