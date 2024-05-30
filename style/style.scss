@@ -3,6 +3,7 @@
 @use"./services.scss";
 @use"./working.scss";
 @use"./order.scss";
+@use"./structure.scss";
 * {
     margin: 0;
     padding: 0;
@@ -12,4 +13,7 @@
   .container {
     width: 1100px;
     margin: 0 auto;
+  }
+  body{
+    background-color: #F4F4F4;
   }

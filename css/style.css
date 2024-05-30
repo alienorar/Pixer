@@ -1,17 +1,25 @@
 header {
   padding: 16px 0;
   box-shadow: 10px 10px 5px rgb(145, 170, 182);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
 }
 header nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 header nav .nav__list {
   list-style-type: none;
   display: flex;
+  align-items: center;
 }
 header nav .nav__list .nav__item {
   margin-left: 32px;
+  align-items: center;
 }
 header nav .nav__list .nav__item a {
   text-decoration: none;
@@ -219,18 +227,20 @@ header nav button:hover {
   padding: 56px 0px;
 }
 
-.order {
-  display: flex;
+#order {
+  margin: 30px auto;
   background-color: #00bafc;
+}
+#order .order {
+  display: flex;
   width: 1300px;
   height: 543px;
   padding: 56px 100px;
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  margin: 0 auto;
 }
-.order .order__text {
+#order .order__text {
   color: #FFF;
   margin-top: 3px;
   text-align: center;
@@ -240,7 +250,7 @@ header nav button:hover {
   font-weight: 700;
   line-height: 130%;
 }
-.order .order__info {
+#order .order__info {
   width: 719px;
   height: 48px;
   color: #FFF;
@@ -250,9 +260,9 @@ header nav button:hover {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  margin: 0 auto;
+  margin: 20px auto;
 }
-.order .order__form {
+#order .order__form {
   border-radius: 5px;
   background-color: #FFF;
   width: 348px;
@@ -263,14 +273,14 @@ header nav button:hover {
   justify-content: space-between;
   padding: 24px;
 }
-.order .order__inp, .order .order__select {
+#order .order__inp, #order .order__select {
   padding: 16px;
   background-color: #f3f3f3;
   border-radius: 5px;
   border: none;
   outline: none;
 }
-.order button {
+#order button {
   background-color: #00bafc;
   border-radius: 5px;
   color: white;
@@ -281,11 +291,103 @@ header nav button:hover {
   display: block;
   transition: all 0.2s linear;
 }
-.order button:hover {
+#order button:hover {
   border: 2.5px solid #00bafc;
   transform: scale(1.1);
   font-size: 18px;
   background: #fff;
+  color: #00bafc;
+}
+
+.serv_info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  height: 50vh;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(212, 237, 255, 0.4745098039);
+  padding: 30px;
+  box-shadow: 10px 10px 5px 0px rgba(126, 130, 137, 0.748);
+}
+.serv_info h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+}
+.serv_info p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+.structure {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 40px;
+  box-shadow: 10px 10px 5px 0px rgba(126, 130, 137, 0.748);
+  background-color: rgba(212, 237, 255, 0.4745098039);
+}
+.structure img {
+  width: 400px;
+  height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.structure .st_info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.structure .st_info h1 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.structure .st_info p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.structure .st_info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 24px;
+}
+.structure .st_info ul li {
+  font-size: 40px;
+  color: #00BAFC;
+}
+.structure .st_info ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+}
+.structure .services__control {
+  display: flex;
+  align-items: center;
+}
+.structure .services__control button {
+  background-color: #00bafc;
+  border-radius: 5px;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  margin-right: 16px;
+  transition: all 0.2s linear;
+}
+.structure .services__control button:hover {
+  border: 2.5px solid #00bafc;
+  transform: scale(1.1);
+  font-size: 18px;
+  background: #fff;
+  color: #00bafc;
+}
+.structure .services__control a {
   color: #00bafc;
 }
 
@@ -298,4 +400,8 @@ header nav button:hover {
 .container {
   width: 1100px;
   margin: 0 auto;
+}
+
+body {
+  background-color: #F4F4F4;
 }

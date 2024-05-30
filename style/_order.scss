@@ -3,17 +3,20 @@
   background-color: #00bafc;
   padding: 56px 0px;
 }
-.order {
-    display: flex;
+#order {
+   
+    margin: 30px auto;
     background-color: #00bafc;
+
+    .order{
+       display: flex;
     width: 1300px;
     height: 543px;
     padding: 56px 100px;
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    margin: 0 auto;
-
+    }
     .order__text {
         color: #FFF;
         margin-top: 3px;
@@ -34,7 +37,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: 150%;
-        margin: 0 auto;
+        margin: 20px auto;
       }
       
       .order__form {
